@@ -5,6 +5,7 @@ const operatorButtons = document.querySelectorAll('.operator');
 const clearButton = document.getElementById('clear');
 const equalButton = document.getElementById('calculate');
 const plusMinusButton = document.getElementById('pos-neg');
+const percentButton = document.getElementById('percent');
 
 // VARIABLES
 let currentInput = '0';
@@ -98,6 +99,14 @@ plusMinusButton.addEventListener('click', () => {
   
   if (!isNaN(currentInput)) {
     currentInput = (-parseFloat(currentInput)).toString();
+    updateDisplay();
+  }
+});
+// percent button
+percentButton.addEventListener('click', () => {
+
+  if (!isNaN(currentInput)) {
+    currentInput = (parseFloat(currentInput) / 100).toString();
     updateDisplay();
   }
 });
