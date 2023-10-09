@@ -11,6 +11,7 @@ const percentButton = document.getElementById('percent');
 let currentInput = '0';
 let firstOperand = null;
 let selectedOperator = null;
+let decimalAdded = false;
 
 // FUNCTIONS:
 
@@ -61,13 +62,20 @@ numberButtons.forEach((button) => {
   button.addEventListener('click', () => {
     const digit = button.textContent;
 
-    if (currentInput === '0' || currentInput === '-0') {
-      currentInput = digit;
-    } else {
-      currentInput += digit;
-    }
+    if (!isNaN(currentInput) || currentInput === 'Error') {
+      
+      if (digit === '.' && currentInput.includes('.')) {
+        return;
+      }
 
-    updateDisplay();
+      if (currentInput === '0' && digit !== '0' && digit !== '.') {
+        currentInput = digit;
+      } else {
+        currentInput += digit;
+      }
+
+      updateDisplay();
+    }
   });
 });
 // operator buttons
