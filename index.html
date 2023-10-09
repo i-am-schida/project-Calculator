@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iPhone Calculator</title>
+  <link rel="stylesheet" href="styles.css"> <!-- CSS -->
+</head>
+<body>
+  <main>
+    <div class="calculator">
+      <div class="result">
+        <!-- Result Display -->
+        <span id="output">0</span>
+      </div>
+      <div class="buttons">
+        <!-- Number Buttons -->
+        <div class="numbers">
+          <button class="number">1</button>
+          <button class="number">2</button>
+          <button class="number">3</button>
+          <button class="number">4</button>
+          <button class="number">5</button>
+          <button class="number">6</button>
+          <button class="number">7</button>
+          <button class="number">8</button>
+          <button class="number">9</button>
+          <button class="number">0</button>
+          <button class="number" id="decimal">.</button>
+        </div>
+      </div>
+      <!-- Operations -->
+      <div class="operations">
+        <button class="operator">+</button>
+        <button class="operator">-</button>
+        <button class="operator">*</button>
+        <button class="operator">/</button>
+        <button class="equal" id="calculate">=</button>
+        <button class="extra" id="pos-neg">+/-</button> <!-- idk maybe add -->
+        <button class="extra" id="percent">%</button> <!-- idk maybe add -->
+      </div>
+      <!-- Clear Button -->
+      <button class="clear" id="clear">C</button>
+    </div>
+  </main>
+  <link rel="stylesheet" href="script.js"> <!-- JavaScript -->
+</body>
+</html>
