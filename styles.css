@@ -7,9 +7,13 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  background-image: url('images/apple.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
-/* Calculator Container */
+/* Calculator */
 .calculator {
   background-color: #000000;
   border-radius: 40px;
