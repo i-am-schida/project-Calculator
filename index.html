@@ -15,32 +15,37 @@
       </div>
       <div class="buttons">
         <!-- Number Buttons -->
-        <div class="numbers">
-          <button class="number">1</button>
-          <button class="number">2</button>
-          <button class="number">3</button>
-          <button class="number">4</button>
-          <button class="number">5</button>
-          <button class="number">6</button>
+        <div class="row">
+          <!-- Clear Button -->
+          <button class="clear" id="clear">C</button>
+          <button class="extra" id="pos-neg">+/-</button> 
+          <button class="extra" id="percent">%</button> 
+          <button class="operator">÷</button>
+        </div>
+        <div class="row">
           <button class="number">7</button>
           <button class="number">8</button>
           <button class="number">9</button>
-          <button class="number">0</button>
+          <button class="operator">x</button>
+        </div>
+        <div class="row">
+          <button class="number">4</button>
+          <button class="number">5</button>
+          <button class="number">6</button>
+          <button class="operator">-</button>
+        </div>
+        <div class="row">
+          <button class="number">1</button>
+          <button class="number">2</button>
+          <button class="number">3</button>
+          <button class="operator">+</button>
+        </div>
+        <div class="row">
+          <button class="number zero">0</button>
           <button class="number" id="decimal">.</button>
+          <button class="equal" id="calculate">=</button>
         </div>
       </div>
-      <!-- Operations -->
-      <div class="operations">
-        <button class="operator">+</button>
-        <button class="operator">-</button>
-        <button class="operator">*</button>
-        <button class="operator">/</button>
-        <button class="equal" id="calculate">=</button>
-        <button class="extra" id="pos-neg">+/-</button> <!-- idk maybe add -->
-        <button class="extra" id="percent">%</button> <!-- idk maybe add -->
-      </div>
-      <!-- Clear Button -->
-      <button class="clear" id="clear">C</button>
     </div>
   </main>
   <script src="script.js"></script> <!-- JavaScript -->
